@@ -617,7 +617,7 @@ Use the `url` method with an `img` element in your markup:
 Notes:
 * `{{this.url}}` will assume the first store in your `stores` array. In this example, we're displaying the image from the "thumbs" store but wrapping it in a link that will load the image from the primary store (for example, the original image or a large image).
 * The `uploading` and `storing` options allow you to specify a static image that will be shown in place of the real image while it is being uploaded and stored. You can alternatively use `if` blocks like `{{#if this.isUploaded}}` and `{{#if this.hasStored 'thumbs'}}` to display something different until upload and storage is complete.
-* These helpers are actually just instance methods on the `FS.File` instances, so there are others you can use, such as `this.isImage`. See [the API documentation](https://github.com/CollectionFS/Meteor-cfs-file/blob/master/api.md). The `url` method is documented separately [here](https://github.com/CollectionFS/Meteor-cfs-access-point/blob/master/api.md#fsfileurloptionsanywhere).
+* These helpers are actually just instance methods on the `FS.File` instances, so there are others you can use, such as `this.isImage`. See [the API documentation](https://github.com/CollectionFS/Meteor-CollectionFS/blob/master/packages/file/api.md). The `url` method is documented separately [here](https://github.com/CollectionFS/Meteor-CollectionFS/blob/master/packages/access-point/api.md#fsfileurloptionsanywhere).
 
 
 
